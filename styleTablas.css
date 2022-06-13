@@ -1,0 +1,116 @@
+*{
+    font-family: 'Inter', sans-serif;
+
+    font-family: 'Merriweather', serif;
+}
+
+table,td{
+    border: 2px solid black;
+    table-layout: fixed;
+    vertical-align: top;
+    
+}
+
+td{
+    text-align: center;
+    font-weight: 300;
+    width: 25%;
+    padding: 1em;
+    
+}
+
+.titulos{
+    background-color: rgb(98, 128, 155);
+    color:aliceblue;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+
+ul li{
+    list-style-type: none;
+    text-align: left;
+    line-height: 2em;
+    text-indent: -1em;    
+}
+
+li:before{
+    content: "✔  ";
+    color: green;
+    font-weight: bold;
+}
+
+.botonsito{
+    padding: 0;
+    border: 0;
+}
+
+button{
+    background-color: rgb(98, 128, 155) ;
+    color: aliceblue;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+button:hover{
+    color:rgb(98, 128, 155) ;
+    background-color: aliceblue;
+    cursor:pointer;
+}
+
+button:active{
+    cursor:grab;
+    font-weight: 900;
+    animation: colorines 0.1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes colorines{
+    0% {
+        color: green;
+        background-color:blue;
+    }
+    10% {
+        color: blue;
+        background-color:pink;
+    }
+    20% {
+        color: pink;
+        background-color:green
+    }
+    30% {
+        color: black;
+        background-color:white;
+    }
+    40% {
+        color: red;
+        background-color:black;
+    }
+    50% {
+        color: yellow;
+        background-color:orange;
+    }
+    60% {
+        color: purple;
+        background-color:brown;
+    }
+    70% {
+        color: white;
+        background-color:aliceblue;
+    }
+    80% {
+        color: brown;
+        background-color:red;
+    }
+    90% {
+        color: orange;
+        background-color:purple;
+    }
+    100%{
+        color: aliceblue;
+        background-color:yellow;
+    }
+}
